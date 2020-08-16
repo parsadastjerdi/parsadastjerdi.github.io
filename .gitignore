@@ -1,0 +1,14 @@
+# osx files
+.DS_Store
+
+blog/ideas.txt
+
+# LaTeX files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.png
+*.jpg

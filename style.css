@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'NBInternationalPro-Mono';
+  src: url('webfonts/NBInternationalPro-Mono.eot');
+  src: url('webfonts/NBInternationalPro-Mono.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/NBInternationalPro-Mono.woff2') format('woff2'),
+       url('webfonts/NBInternationalPro-Mono.woff') format('woff'),
+       url('webfonts/NBInternationalPro-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, span, li, a {
+  font-family: 'NBInternationalPro-Mono';
+  font-weight: normal;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+       -o-font-smoothing: antialiased;
+}
+
+a {
+  border-radius: 1px;
+  text-decoration: none;
+  opacity: 1;
+  transition: .3s opacity;
+  -webkit-transition: .3s opacity;
+  -moz-transition: .3s opacity;
+  -o-transition: .3s opacity;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  opacity: .5;
+  transition: .3s opacity;
+  -webkit-transition: .3s opacity;
+  -moz-transition: .3s opacity;
+  -o-transition: .3s opacity;
+}
+
+body {
+	perspective: 1500px;
+  height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+section {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+
+  transform: rotateX(10deg) rotateY(20deg);
+}
+
+div.face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: cover;
+}
+
+div.face-front {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Front.svg);
+  transform: translateX(-50%) translateY(-50%) translateZ(128px);
+}
+
+div.face-side-right {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Side-Right.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(-128px);
+}
+
+div.face-side-left {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Side-Left.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(128px);
+}
+
+div.face-top {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Top.svg);
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(128px);
+}
+
+div.face-bottom {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Bottom.svg);
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(128px);
+}
+
+div.face-back {
+  height: 256px;
+  width: 256px;
+  background-image: url(svg/Face-Back.svg);
+  transform: translateX(-50%) translateY(-50%) rotateY(-180deg) translateZ(128px);
+}
+
+/*
+  position: fixed keeps the elements on the page at all times
+*/
+
+
+.linkedin {
+  position: absolute;
+  width: 140px;
+  bottom: 20px;
+  left: 47%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.github {
+  position: absolute;
+  width: 140px;
+  bottom: 20px;
+  left: 53%;
+  transform: translateX(-50%) translateY(-50%);
+}
